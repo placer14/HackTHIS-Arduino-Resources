@@ -15,3 +15,4 @@ For really obscure parts and components:
 http://digikey.com
 http://mouser.com
 
+This package is also hosted at https://github.com/placer14/HackTHIS-Arduino-Resources
