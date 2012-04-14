@@ -1,4 +1,6 @@
-Here is some helpful information for this workshop.
+Here is some helpful information for this workshop. I've organized information by
+workshop to better organize the materials. Workshop1 doesn't exist because we followed
+the Oomlaut Workshop Manual to help us setup our Arduino environments.
 
 Source for Manual/Experiments that we'll be performing in these workshops is found at: 
 http://oomlout.com/products/ARDX/ARDX-experimenters-guide-DD.pdf
