@@ -8,12 +8,15 @@ http://oomlout.com/products/ARDX/ARDX-experimenters-guide-DD.pdf
 Arduino Programming Reference: http://arduino.cc/en/Reference/HomePage
 Arduino Tutorials and 3rd-party Libraries: http://arduino.cc/en/Tutorial/HomePage
 
-Parts can be found quite cheaply at the following sites:
+A comprehensive spreadsheet of all the known Arduino variants can be found here:
+http://bit.ly/IexMf5
+
+Parts can be found quite cheaply at the following sites (and are friendlier to use):
 http://sparkfun.com
 http://makershed.com
-http://ladyada.org/
+http://ladyada.org
 
-For really obscure parts and components:
+For really obscure parts and components (and more complex searching):
 http://digikey.com
 http://mouser.com
 
