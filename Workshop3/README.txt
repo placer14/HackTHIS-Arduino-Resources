@@ -1,5 +1,5 @@
 HackTHIS: Arduino
-Workshop 4
+Workshop 3
 
 Today we'll be driving motors!
 
