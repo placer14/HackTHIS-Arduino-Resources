@@ -1,0 +1,82 @@
+## A basic arduino sketch structure
+
+void setup() {
+  # This gets performed once when powered-up
+}
+
+void loop() {
+  # This gets performed over and over until powered-down
+}
+
+## Constants describe a type of value which never changes
+
+int INT_CONSTANT = 32;            # int - a number between -32,768 and 32,768 inclusive and requires 2 bytes of memory
+long LONG_CONSTANT = 987654321;   # long - a number between -2,147,483,648 and 2,147,483,648 inclusive and requires 4 bytes of memory
+boolean BOOL_CONSTANT = true;     # boolean - a value representing either true or false and requires 1 bit of memory
+float FLOAT_CONSTANT = 1.23       # float - a number between -3.4028235E+38 and 3.4028235E+38 (that's 38 zeros) and requires 4 bytes of memory
+char CHAR_CONSTANT = 'a'          # char - a value representing an ASCII character using an integer and requires 1 byte of memory
+
+
+## Math Operations
+
+int x;
+x = 1 + 1;      # the assignment (=) sets a variable on the left with the value on the right; x is now 2
+x = 2 - 1;      # addition and subtraction are easily performed; x is now 1
+x = 4 / 2;      # division and multiplication are also possible; x is now 2
+x = 2 * 2;      # x is now 4
+x = 3 / 2;      # division will always round integers down; x is 1
+x = 3 % 2;      # the modulo operator will give the remainder; x is 1
+
+## Conditional Comparisons
+
+int y;
+x = 1;
+y = 2;
+
+x > y;          # conditions return boolean values; this would be false because x is not greater than y
+x < y;          # this would be true
+y <= x;         # this would be false because y is not less than or equal to x
+y >= y;         # this would be true because y IS greater than or EQUAL TO y
+x == x;         # this would be true because x is equal to x
+x != y;         # this would also be true because x is not equal to y
+
+## Structures and Loops
+
+# if/else conditional structure
+if (x < y) {
+  # run this block when the condition above is true
+} else {
+  # run this block when the condition above is false
+}
+
+# a 'while' loop
+while (x < y) {
+  # run this block each time the condition above is true; which could be forever
+}
+
+# a 'for' loop
+for (int i = 0; i < 10; i = i + 1) {
+  # this block runs 10 times
+}
+
+# equivalent structure as the 'for' loop above
+int i = 10;
+while (i < 10) {
+  # this block runs 10 times
+  i = i + 1;
+}
+
+## Talking to Arduino GPIO
+
+pinMode(1, INPUT);    # set pin 1 to be INPUT
+pinMode(2, OUTPUT);   # set pin 2 to be OUTPUT
+pinMode(3, OUTPUT);   # set pin 2 to be OUTPUT
+pinMode(5, OUTPUT);   # set pin 5 to be OUTPUT
+
+int x;                      # don't forget to declare before you use variables
+x = digitalRead(1);         # read HIGH or LOW from pin 1. this gets saved as an int where HIGH is 1 and LOW is 0
+                            # will reliably return HIGH above 4 volts; will reliably return LOW below 1 volt;
+
+x = digitalWrite(2, HIGH);  # set the voltage on pin 2 to 5 volts (HIGH); can source up to 30 mA this way before killing the pin
+x = analogWrite(3, 255);    # set the voltage on pin 3 to a variable amount of voltage between 0-5 in steps from 0-255
+x = analogWrite(5, 0);      # set the voltage on pin 5 to a variable amount of voltage between 0-5 in steps from 0-255
